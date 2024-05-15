@@ -20,6 +20,8 @@
     <modules>
         <module>fishUser</module>
         <module>fishEureka</module>
+        <module>fishEurekaClient</module>
+        <module>fishNacos</module>
     </modules>
 <!--     建立父子 Module 依赖 end-->
 
@@ -43,11 +45,11 @@
 
 
 
-        <!--实现Eureka认证,保证Eureka的安全性-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-security</artifactId>
-        </dependency>
+<!--        &lt;!&ndash;实现Eureka认证,保证Eureka的安全性&ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-security</artifactId>-->
+<!--        </dependency>-->
 
     </dependencies>
 

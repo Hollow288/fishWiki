@@ -1,0 +1,22 @@
+server:
+  port: 8070
+spring:
+  application:
+    name: fishNacos-8070
+  cloud:
+    # nacos????
+    nacos:
+      server-addr: 127.0.0.1:8848
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 5000  # ?????????????
+  threadpool:
+    default:
+      coreSize: 10  # ??????????
+
+
+

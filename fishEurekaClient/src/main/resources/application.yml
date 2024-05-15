@@ -15,7 +15,7 @@ eureka:
 spring:
   application:
     #注册到注册中心的名称,注意不能使用“_”
-    name: eureka-client-8900
+    name: fishEureka-client-8900
   # 指定用户名和密码,其他服务想注册到Eureka上需要添加用户名和密码进行认证
   security:
     user:

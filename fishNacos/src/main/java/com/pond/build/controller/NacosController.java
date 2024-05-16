@@ -4,6 +4,7 @@ import cn.hutool.http.HttpRequest;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.time.LocalTime;
@@ -28,6 +29,14 @@ public class NacosController {
 
     public String timeOutInvoke() {
         return "系统繁忙，请稍后再试";
+
+    }
+
+
+    @GetMapping("/gateway")
+    @ResponseBody
+    public String gateway() {
+        return "gateway test";
 
     }
 }

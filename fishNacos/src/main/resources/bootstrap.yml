@@ -1,0 +1,50 @@
+#spring:
+#  application:
+#    name: fishNacos-8070
+#  cloud:
+#    nacos:
+#      username: nacos
+#      password: nacos
+#      server-addr: http://127.0.0.1:8848
+##      注册中心的命名空间，视情况添加
+##      discovery:
+##        namespace: 448a9a09-956f-4937-ab03-5900d6075a60
+#      config:
+#        file-extension: yaml
+#        contextPath: /nacos
+#        namespace: 448a9a09-956f-4937-ab03-5900d6075a60
+
+#  profiles:
+#    active: dev
+
+
+#---
+#spring:
+#  profiles: dev
+#  cloud:
+#    nacos:
+#      server-addr: 127.0.0.1:8848
+#      config:
+#        namespace: 448a9a09-956f-4937-ab03-5900d6075a60
+#
+#
+#---
+#spring:
+#  profiles: test
+#  cloud:
+#    nacos:
+#      server-addr: 测试环境nacos的ip:8848
+#      config:
+#        namespace: 0c262216-1468-424c-adf4-085b1dff01eb
+
+
+spring:
+  cloud:
+    nacos:
+      config:
+        name: fishNacos-8070
+        group: DEFAULT_GROUP
+        server-addr: 127.0.0.1:8848
+        file-extension: yaml
+        namespace: 448a9a09-956f-4937-ab03-5900d6075a60
+        contextPath: /nacos

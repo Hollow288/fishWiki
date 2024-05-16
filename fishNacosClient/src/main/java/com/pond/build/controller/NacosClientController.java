@@ -19,6 +19,13 @@ public class NacosClientController {
 
     }
 
+
+//    @GetMapping("/test")
+//    public String test1() {
+//        return providerFeign.invoke();
+//
+//    }
+
 }
 
 @FeignClient("fishNacos-8070")
@@ -26,5 +33,9 @@ interface ProviderFeign {
 
     @GetMapping("invoke")
     String invoke();
+
+
+//    @GetMapping("invoke")
+//    String invoke();
 
 }

@@ -22,6 +22,8 @@
         <module>fishEureka</module>
         <module>fishEurekaClient</module>
         <module>fishNacos</module>
+        <module>fishNacosClient</module>
+        <module>fishZuul</module>
     </modules>
 <!--     建立父子 Module 依赖 end-->
 
